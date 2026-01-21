@@ -23,42 +23,39 @@ export function Logo({ className, showText = true, variant = "default" }: LogoPr
         >
           <g>
             <path
-              d="M25 85 L25 35 L75 10 L100 25 L100 85 Z"
+              d="M0 110 L25 60 L50 40 L75 25 L100 35 L125 20 L150 30 L180 50 L180 110 Z"
               fill="#0039A6"
               className="transition-colors duration-300"
             />
             <path
-              d="M48 45 L57 39 L63 43.5 L57 48 Z"
+              d="M0 110 L25 60 L50 40 L75 25 L100 35 L125 20 L150 30 L180 50 L180 110 Z"
+              fill="url(#mountainGradient)"
+            />
+            <path
+              d="M25 60 L50 40 L45 35 L30 50 Z"
               fill="white"
             />
-            <circle cx="56" cy="43.5" r="5.5" fill="white" />
             <path
-              d="M100 85 L100 45 L140 25 L155 32 L155 85 Z"
+              d="M75 25 L100 35 L95 30 L80 20 Z"
+              fill="white"
+            />
+            <path
+              d="M125 20 L150 30 L145 25 L130 15 Z"
+              fill="white"
+            />
+            <path
+              d="M50 40 L75 25 L100 35 L125 20 L150 30 L180 50 L180 110 L0 110 Z"
               fill="#DA020E"
+              fillOpacity="0.3"
               className="transition-colors duration-300"
             />
-            <path
-              d="M15 92 Q40 80 70 92 T125 92 L135 102 L5 102 Z"
-              fill="white"
-            />
-            <path
-              d="M25 92 Q45 84 70 92 T120 92"
-              stroke="#DA020E"
-              strokeWidth="6"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="transition-colors duration-300"
-            />
-            <path
-              d="M100 92 Q115 84 135 92"
-              stroke="#0039A6"
-              strokeWidth="6"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="transition-colors duration-300"
-            />
+            <defs>
+              <linearGradient id="mountainGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="#0039A6" />
+                <stop offset="50%" stopColor="#0039A6" stopOpacity="0.8" />
+                <stop offset="100%" stopColor="#DA020E" stopOpacity="0.4" />
+              </linearGradient>
+            </defs>
           </g>
         </svg>
       </div>
