@@ -1,7 +1,8 @@
 "use client"
 
 import Link from "next/link"
-import { Globe2, Mail, Phone, MapPin } from "lucide-react"
+import { Mail, Phone, MapPin } from "lucide-react"
+import { Logo } from "@/components/logo"
 
 export function Footer() {
   return (
@@ -9,10 +10,7 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="py-12 sm:py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2 text-xl font-bold">
-              <Globe2 className="h-6 w-6 text-primary" />
-              <span className="bg-gradient-to-r from-[#0039A6] to-[#DA020E] bg-clip-text text-transparent">Andes Continental</span>
-            </Link>
+            <Logo />
             <p className="text-sm sm:text-base text-muted-foreground">
               Servicios de comercio exterior y negociaciones internacionales. Conectamos mercados globales con soluciones personalizadas desde Chile.
             </p>
