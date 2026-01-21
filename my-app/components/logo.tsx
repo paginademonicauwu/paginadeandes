@@ -14,8 +14,8 @@ export function Logo({ className, showText = true, variant = "default" }: LogoPr
     <Link href="/" className={cn("flex items-center gap-2 sm:gap-3 md:gap-4 group", className)}>
       <div className="relative flex-shrink-0">
         <svg
-          width={variant === "compact" ? "40" : "56"}
-          height={variant === "compact" ? "40" : "56"}
+          width={variant === "compact" ? "44" : "56"}
+          height={variant === "compact" ? "44" : "56"}
           viewBox="0 0 180 130"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -64,13 +64,13 @@ export function Logo({ className, showText = true, variant = "default" }: LogoPr
       </div>
       {showText && (
         <span className={cn(
-          "font-extrabold text-[#0039A6] tracking-tight whitespace-nowrap",
+          "font-bold text-[#0039A6] tracking-tight whitespace-nowrap select-none",
           variant === "compact" 
-            ? "text-[10px] sm:text-xs" 
-            : "text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl"
+            ? "text-[11px] sm:text-xs md:text-sm" 
+            : "text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl"
         )}>
-          <span className="hidden sm:inline">andescontinental.cl</span>
-          <span className="sm:hidden">andes</span>
+          <span className="hidden sm:inline font-semibold">andescontinental.cl</span>
+          <span className="sm:hidden font-semibold">andes</span>
         </span>
       )}
     </Link>
