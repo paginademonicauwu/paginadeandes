@@ -11,10 +11,10 @@ export function Footer() {
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2 text-xl font-bold">
               <Globe2 className="h-6 w-6 text-primary" />
-              <span>Página de Mónica</span>
+              <span className="bg-gradient-to-r from-[#0039A6] to-[#DA020E] bg-clip-text text-transparent">Andes Continental</span>
             </Link>
             <p className="text-sm sm:text-base text-muted-foreground">
-              Servicios de comercio exterior y negociaciones internacionales. Conectamos mercados globales con soluciones personalizadas.
+              Servicios de comercio exterior y negociaciones internacionales. Conectamos mercados globales con soluciones personalizadas desde Chile.
             </p>
           </div>
 
@@ -53,11 +53,11 @@ export function Footer() {
             <div className="flex flex-col gap-3">
               <div className="flex items-start gap-3">
                 <Mail className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-sm sm:text-base text-muted-foreground">contacto@monica.com</span>
+                <span className="text-sm sm:text-base text-muted-foreground">contacto@andescontinental.cl</span>
               </div>
               <div className="flex items-start gap-3">
                 <Phone className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-sm sm:text-base text-muted-foreground">+1 (555) 123-4567</span>
+                <span className="text-sm sm:text-base text-muted-foreground">+56 9 XXXX XXXX</span>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
@@ -70,7 +70,7 @@ export function Footer() {
         <div className="border-t py-6 sm:py-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-xs sm:text-sm text-muted-foreground text-center sm:text-left">
-              &copy; 2024 Página de Mónica. Todos los derechos reservados.
+              &copy; 2024 Andes Continental. Todos los derechos reservados.
             </p>
             <div className="flex gap-6">
               <Link href="/" className="text-xs sm:text-sm text-muted-foreground hover:text-primary transition-colors">

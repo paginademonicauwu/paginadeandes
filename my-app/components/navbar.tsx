@@ -16,9 +16,9 @@ export function Navbar() {
           <div className="p-1.5 sm:p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
             <Globe2 className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
           </div>
-          <span className="text-base sm:text-xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
-            <span className="hidden sm:inline">Página de Mónica</span>
-            <span className="sm:hidden">Mónica</span>
+          <span className="text-base sm:text-xl font-bold bg-gradient-to-r from-[#0039A6] to-[#DA020E] bg-clip-text text-transparent">
+            <span className="hidden sm:inline">Andes Continental</span>
+            <span className="sm:hidden">Andes</span>
           </span>
         </Link>
         <div className="hidden md:flex items-center gap-1 lg:gap-2">

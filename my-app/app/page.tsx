@@ -1,9 +1,15 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { ArrowRight, Package, Globe, TrendingUp, Shield, Clock } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Inicio",
+  description: "Servicios de comercio exterior desde Chile. Importación y exportación de commodities, transporte marítimo, terrestre y multimodal. Soluciones logísticas 24/7.",
+}
 
 export default function Home() {
   return (
@@ -13,11 +19,11 @@ export default function Home() {
       <section className="pt-24 sm:pt-32 pb-12 sm:pb-20 px-4 sm:px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center space-y-4 sm:space-y-6 mb-12 sm:mb-16">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent px-2">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight bg-gradient-to-r from-[#0039A6] via-[#DA020E] to-[#0039A6] bg-clip-text text-transparent px-2">
               ¿Quieres Exportar o Importar hacia o desde cualquier lugar del mundo?
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto px-2">
-              Nos especializamos en todo tipo de commodities y buscamos la mejor oferta para tu negocio. Conectamos mercados globales con soluciones personalizadas.
+              Especialistas en comercio exterior desde Chile. Trabajamos con todo tipo de commodities y buscamos la mejor oferta para tu negocio. Conectamos mercados globales con soluciones personalizadas.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-4 sm:pt-6 px-2">
               <Link href="/cotizar" className="w-full sm:w-auto">
