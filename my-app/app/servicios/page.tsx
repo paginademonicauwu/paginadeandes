@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import { Ship, Truck, Package, ArrowRight, CheckCircle2 } from "lucide-react"
+import { Ship, Truck, Package, ArrowRight, CheckCircle2, FileCheck } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Servicios",
@@ -45,6 +45,10 @@ export default function Servicios() {
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <p className="text-sm font-semibold">Contenedores refrigerados y secos</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                   <p className="text-sm">Carga a granel líquida y sólida</p>
                 </div>
                 <div className="flex items-start gap-3">
@@ -72,6 +76,10 @@ export default function Servicios() {
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                   <p className="text-sm">Transporte de carga completa y parcial</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <p className="text-sm font-semibold">Coordinamos toda la logística</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
@@ -119,26 +127,42 @@ export default function Servicios() {
             </Card>
           </div>
 
-          <Card className="border-2 bg-gradient-to-r from-primary/5 to-primary/10 mb-12 sm:mb-16">
-            <CardHeader>
-              <CardTitle className="text-2xl sm:text-3xl text-center mb-4 px-2">
-                Soluciones Completas para tu Cadena de Suministro
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="text-center space-y-4 sm:space-y-6">
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto px-2">
-                No importa el tamaño de tu operación o la complejidad de tu logística. 
-                Ofrecemos servicios personalizados que se adaptan a tus necesidades específicas, 
-                garantizando eficiencia, seguridad y cumplimiento normativo en cada paso del proceso.
-              </p>
-              <Link href="/cotizar" className="inline-block">
-                <Button size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
-                  Solicitar Cotización
-                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-                </Button>
-              </Link>
-            </CardContent>
-          </Card>
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 mb-12 sm:mb-16">
+            <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-primary/10">
+              <CardHeader>
+                <div className="h-12 w-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4">
+                  <FileCheck className="h-6 w-6 text-primary" />
+                </div>
+                <CardTitle className="text-xl sm:text-2xl">Agente de Aduana</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm sm:text-base text-muted-foreground">
+                  Contamos con <strong>Agente de Aduana</strong> para asesoría global a sus operaciones. 
+                  Gestión completa de trámites aduaneros, documentación y cumplimiento normativo.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 bg-gradient-to-r from-primary/5 to-primary/10">
+              <CardHeader>
+                <CardTitle className="text-xl sm:text-2xl text-center mb-4 px-2">
+                  Soluciones Completas para tu Cadena de Suministro
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-center space-y-4">
+                <p className="text-sm sm:text-base text-muted-foreground max-w-xl mx-auto px-2">
+                  No importa el tamaño de tu operación o la complejidad de tu logística. 
+                  Ofrecemos servicios personalizados que se adaptan a tus necesidades específicas.
+                </p>
+                <Link href="/cotizar" className="inline-block">
+                  <Button size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
+                    Solicitar Cotización
+                    <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 

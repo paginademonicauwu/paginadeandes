@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import { ArrowRight, Package, Globe, TrendingUp, Shield, Clock } from "lucide-react"
+import { ArrowRight, Package, Globe, TrendingUp, Shield, Clock, FileCheck, Snowflake, PackageCheck } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Inicio",
@@ -78,15 +78,15 @@ export default function Home() {
             </Card>
           </div>
 
-          <div className="mt-12 sm:mt-20 grid sm:grid-cols-2 gap-4 sm:gap-8">
+          <div className="mt-12 sm:mt-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             <Card className="border-2">
               <CardHeader>
                 <Shield className="h-7 w-7 sm:h-8 sm:w-8 text-primary mb-4" />
-                <CardTitle className="text-2xl sm:text-3xl">Experiencia y Confianza</CardTitle>
+                <CardTitle className="text-xl sm:text-2xl">Experiencia y Confianza</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-base sm:text-lg text-muted-foreground">
-                  Años de experiencia en comercio exterior nos han posicionado como socios estratégicos confiables para empresas de todos los tamaños.
+                <p className="text-sm sm:text-base text-muted-foreground">
+                  Años de experiencia en comercio exterior nos han posicionado como socios estratégicos confiables.
                 </p>
               </CardContent>
             </Card>
@@ -94,11 +94,35 @@ export default function Home() {
             <Card className="border-2">
               <CardHeader>
                 <Clock className="h-7 w-7 sm:h-8 sm:w-8 text-primary mb-4" />
-                <CardTitle className="text-2xl sm:text-3xl">Soporte 24/7</CardTitle>
+                <CardTitle className="text-xl sm:text-2xl">Soporte 24/7</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-base sm:text-lg text-muted-foreground">
-                  Nuestro equipo está disponible las 24 horas del día, los 7 días de la semana para resolver cualquier contingencia en tu operación.
+                <p className="text-sm sm:text-base text-muted-foreground">
+                  Disponible las 24 horas del día, los 7 días de la semana para resolver cualquier contingencia.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-primary/20">
+              <CardHeader>
+                <PackageCheck className="h-7 w-7 sm:h-8 sm:w-8 text-primary mb-4" />
+                <CardTitle className="text-xl sm:text-2xl">Contenedores</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm sm:text-base text-muted-foreground">
+                  Carga para <strong>contenedores refrigerados y secos</strong>. Soluciones completas para todo tipo de mercancías.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-primary/20">
+              <CardHeader>
+                <FileCheck className="h-7 w-7 sm:h-8 sm:w-8 text-primary mb-4" />
+                <CardTitle className="text-xl sm:text-2xl">Agente de Aduana</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm sm:text-base text-muted-foreground">
+                  Contamos con <strong>Agente de Aduana</strong> para asesoría global a sus operaciones.
                 </p>
               </CardContent>
             </Card>
