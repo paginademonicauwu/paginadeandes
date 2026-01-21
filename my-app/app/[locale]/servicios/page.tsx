@@ -29,8 +29,8 @@ export default function Servicios() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
             <Card className="border-2 hover:shadow-2xl transition-all duration-300 hover:scale-105 group">
               <CardHeader className="pb-4">
-                <div className="h-14 w-14 sm:h-16 sm:w-16 rounded-full bg-blue-500/10 flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-blue-500/20 transition-colors">
-                  <Ship className="h-7 w-7 sm:h-8 sm:w-8 text-blue-600" />
+                <div className="h-14 w-14 sm:h-16 sm:w-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-primary/20 transition-colors">
+                  <Ship className="h-7 w-7 sm:h-8 sm:w-8 text-primary" />
                 </div>
                 <CardTitle className="text-2xl sm:text-3xl mb-3">{t('maritimo.title')}</CardTitle>
                 <CardDescription className="text-sm sm:text-base">
@@ -63,8 +63,8 @@ export default function Servicios() {
 
             <Card className="border-2 hover:shadow-2xl transition-all duration-300 hover:scale-105 group">
               <CardHeader className="pb-4">
-                <div className="h-14 w-14 sm:h-16 sm:w-16 rounded-full bg-green-500/10 flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-green-500/20 transition-colors">
-                  <Truck className="h-7 w-7 sm:h-8 sm:w-8 text-green-600" />
+                <div className="h-14 w-14 sm:h-16 sm:w-16 rounded-full bg-accent/10 flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-accent/20 transition-colors">
+                  <Truck className="h-7 w-7 sm:h-8 sm:w-8 text-accent" />
                 </div>
                 <CardTitle className="text-2xl sm:text-3xl mb-3">{t('terrestre.title')}</CardTitle>
                 <CardDescription className="text-sm sm:text-base">
@@ -126,7 +126,7 @@ export default function Servicios() {
             </Card>
           </div>
 
-          <Card className="border-2 border-primary/30 bg-gradient-to-r from-primary/10 via-white to-accent/10 mb-8 sm:mb-12">
+          <Card className="border-2 border-primary/30 bg-gradient-to-r from-primary/10 via-background to-accent/10 mb-8 sm:mb-12">
             <CardHeader>
               <CardTitle className="text-xl sm:text-2xl md:text-3xl text-center mb-4 px-2">
                 {t('especializados.title')}

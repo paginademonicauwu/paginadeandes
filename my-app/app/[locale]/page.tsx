@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
+import Image from 'next/image';
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Navbar } from "@/components/navbar"
@@ -15,29 +16,46 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
       <Navbar />
       
-      <section className="pt-24 sm:pt-32 pb-12 sm:pb-20 px-4 sm:px-6">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center space-y-4 sm:space-y-6 mb-12 sm:mb-16">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight bg-gradient-to-r from-[#0039A6] via-[#DA020E] to-[#0039A6] bg-clip-text text-transparent px-2">
+      <div className="relative w-full mt-16 sm:mt-20 min-h-[500px] sm:min-h-[600px] md:min-h-[700px] flex items-center justify-center">
+        <div className="absolute inset-0 w-full h-full">
+          <Image
+            src="/bannermapa.png"
+            alt="Cobertura global"
+            fill
+            className="object-cover"
+            priority
+            quality={90}
+          />
+          <div className="absolute inset-0 bg-background/40 dark:bg-background/60 backdrop-blur-[1px]"></div>
+        </div>
+        
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20">
+          <div className="text-center space-y-6 sm:space-y-8 max-w-5xl mx-auto">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent px-2 drop-shadow-lg">
               {t('title')}
             </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto px-2">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-foreground/90 max-w-4xl mx-auto px-2 font-medium drop-shadow-md">
               {t('subtitle')}
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-4 sm:pt-6 px-2">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center pt-6 sm:pt-8 px-2">
               <Link href="/cotizar" className="w-full sm:w-auto">
-                <Button size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6">
+                <Button size="lg" className="w-full sm:w-auto text-base sm:text-lg px-8 sm:px-10 py-6 sm:py-7 shadow-xl hover:shadow-2xl transition-all">
                   {t('cta1')}
-                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  <ArrowRight className="ml-2 h-5 w-5 sm:h-6 sm:w-6" />
                 </Button>
               </Link>
               <Link href="/servicios" className="w-full sm:w-auto">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto text-base sm:text-lg px-8 sm:px-10 py-6 sm:py-7 bg-background/90 dark:bg-background/80 backdrop-blur-sm border-2 shadow-xl hover:shadow-2xl transition-all">
                   {t('cta2')}
                 </Button>
               </Link>
             </div>
           </div>
+        </div>
+      </div>
+
+      <section className="pt-12 sm:pt-16 pb-12 sm:pb-20 px-4 sm:px-6">
+        <div className="container mx-auto max-w-6xl">
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-12 sm:mt-20">
             <Card className="border-2 hover:shadow-xl transition-all duration-300 hover:scale-105">
@@ -77,7 +95,7 @@ export default function Home() {
             </Card>
           </div>
 
-          <Card className="border-2 border-primary/30 bg-gradient-to-r from-primary/10 via-white to-accent/10 mt-12 sm:mt-20 mb-8 sm:mb-12">
+          <Card className="border-2 border-primary/30 bg-gradient-to-r from-primary/10 via-background to-accent/10 mt-12 sm:mt-20 mb-8 sm:mb-12">
             <CardHeader>
               <CardTitle className="text-xl sm:text-2xl md:text-3xl text-center mb-4 px-2">
                 {t('serviciosEspecializados.title')}
