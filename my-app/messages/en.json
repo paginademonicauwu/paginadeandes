@@ -1,0 +1,155 @@
+{
+  "nav": {
+    "inicio": "Home",
+    "servicios": "Services",
+    "cotizar": "Quote"
+  },
+  "home": {
+    "title": "Do you want to Export or Import to or from anywhere in the world?",
+    "subtitle": "Foreign trade specialists from Chile. We work with all types of commodities and find the best offer for your business. We connect global markets with customized solutions.",
+    "cta1": "Get started",
+    "cta2": "View services",
+    "commodities": {
+      "title": "Global Commodities",
+      "description": "We work with all types of products: agricultural, mineral, energy, manufactured and more."
+    },
+    "cobertura": {
+      "title": "Worldwide Coverage",
+      "description": "We operate on all continents, connecting international suppliers and buyers."
+    },
+    "oferta": {
+      "title": "Best Offer",
+      "description": "We negotiate the best commercial conditions to optimize your costs and maximize benefits."
+    },
+    "serviciosEspecializados": {
+      "title": "Specialized Services",
+      "description": "Cargo for refrigerated and dry containers. Land transport we coordinate all logistics, we have a Customs Agent for global advice on your operations."
+    },
+    "experiencia": {
+      "title": "Experience and Trust",
+      "description": "Years of experience in foreign trade have positioned us as reliable strategic partners."
+    },
+    "soporte": {
+      "title": "24/7 Support",
+      "description": "Available 24 hours a day, 7 days a week to resolve any contingency."
+    }
+  },
+  "servicios": {
+    "title": "Transport Services",
+    "subtitle": "Complete logistics solutions to move your products by any route",
+    "maritimo": {
+      "title": "Maritime Transport",
+      "description": "Maritime cargo services for all types of containers and bulk cargo",
+      "fcl": "FCL and LCL to all major ports",
+      "refrigerados": "Refrigerated and dry containers",
+      "granel": "Liquid and solid bulk cargo",
+      "tracking": "Real-time tracking",
+      "documentacion": "Customs documentation management"
+    },
+    "terrestre": {
+      "title": "Land Transport",
+      "description": "Road transport network for regional and national distribution",
+      "completa": "Full and partial cargo transport",
+      "logistica": "We coordinate all logistics",
+      "transfronteriza": "Cross-border coverage",
+      "express": "Express and scheduled service",
+      "flota": "Modern and certified fleet"
+    },
+    "multimodal": {
+      "title": "Multimodal Transport",
+      "description": "Comprehensive solutions combining maritime, land and air",
+      "extremo": "End-to-end logistics",
+      "optimizacion": "Route and cost optimization",
+      "documentos": "Unified document management",
+      "contacto": "Single point of contact"
+    },
+    "especializados": {
+      "title": "Our Specialized Services",
+      "description": "Cargo for refrigerated and dry containers. Land transport we coordinate all logistics, we have a Customs Agent for global advice on your operations."
+    },
+    "aduana": {
+      "title": "Customs Agent",
+      "description": "We have a Customs Agent for global advice on your operations. Complete management of customs procedures, documentation and regulatory compliance."
+    },
+    "soluciones": {
+      "title": "Complete Solutions for your Supply Chain",
+      "description": "No matter the size of your operation or the complexity of your logistics. We offer personalized services that adapt to your specific needs.",
+      "cta": "Request Quote"
+    }
+  },
+  "cotizar": {
+    "title": "Get a Quote",
+    "subtitle": "We are an agile company. We work with you to solve any contingency in the operational logistics and documentation chain. Our support is 24/7.",
+    "rapida": {
+      "title": "Quick Response",
+      "description": "Responses in less than 24 hours"
+    },
+    "soporte": {
+      "title": "24/7 Support",
+      "description": "Team available at all times"
+    },
+    "agiles": {
+      "title": "Agile Solutions",
+      "description": "We adapt our services to your needs"
+    },
+    "form": {
+      "title": "Request your Quote",
+      "description": "Complete the form and our team will contact you shortly",
+      "nombre": "Full name *",
+      "email": "Email *",
+      "empresa": "Company",
+      "telefono": "Phone *",
+      "tipoServicio": "Service Type *",
+      "seleccione": "Select...",
+      "maritimo": "Maritime Transport",
+      "terrestre": "Land Transport",
+      "multimodal": "Multimodal Transport",
+      "exportacion": "Export",
+      "importacion": "Import",
+      "origen": "Origin",
+      "destino": "Destination",
+      "ciudadPais": "City / Country",
+      "descripcion": "Cargo description / Requirements",
+      "enviar": "Send Request"
+    },
+    "porque": {
+      "title": "Why choose us?",
+      "empresa": {
+        "title": "Agile Company",
+        "description": "Optimized processes for quick responses and efficient solutions"
+      },
+      "contingencias": {
+        "title": "Contingency Management",
+        "description": "We solve any unforeseen event in the logistics and documentation chain"
+      },
+      "personalizada": {
+        "title": "Personalized Attention",
+        "description": "We work directly with you to understand and meet your objectives"
+      },
+      "disponibilidad": {
+        "title": "24/7 Availability",
+        "description": "Continuous support to resolve questions or emergencies at any time"
+      }
+    },
+    "tiempos": {
+      "title": "Response Times",
+      "description": "Our commitment is to respond to all inquiries in less than 24 business hours. For urgent cases, we have priority communication channels.",
+      "horario": "Service hours: 24/7 - Every day of the year"
+    }
+  },
+  "footer": {
+    "description": "Foreign trade and international negotiations services. We connect global markets with customized solutions from Chile.",
+    "navegacion": "Navigation",
+    "servicios": "Services",
+    "maritimo": "Maritime Transport",
+    "terrestre": "Land Transport",
+    "multimodal": "Multimodal Transport",
+    "contacto": "Contact",
+    "direccion": "Renaca Norte 265 Of. 510, Viña del Mar, Valparaíso, Chile",
+    "disponible": "Available 24/7",
+    "derechos": "© 2024 Andes Continental. All rights reserved.",
+    "privacidad": "Privacy",
+    "terminos": "Terms",
+    "cookies": "Cookies"
+  }
+}

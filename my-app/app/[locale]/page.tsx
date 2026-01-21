@@ -1,17 +1,16 @@
-import type { Metadata } from "next"
-import Link from "next/link"
+"use client"
+
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import { ArrowRight, Package, Globe, TrendingUp, Shield, Clock, FileCheck, Snowflake, PackageCheck } from "lucide-react"
-
-export const metadata: Metadata = {
-  title: "Inicio",
-  description: "Servicios de comercio exterior desde Chile. Importación y exportación de commodities, transporte marítimo, terrestre y multimodal. Soluciones logísticas 24/7.",
-}
+import { ArrowRight, Package, Globe, TrendingUp, Shield, Clock } from "lucide-react"
 
 export default function Home() {
+  const t = useTranslations('home');
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
       <Navbar />
@@ -20,21 +19,21 @@ export default function Home() {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center space-y-4 sm:space-y-6 mb-12 sm:mb-16">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight bg-gradient-to-r from-[#0039A6] via-[#DA020E] to-[#0039A6] bg-clip-text text-transparent px-2">
-              ¿Quieres Exportar o Importar hacia o desde cualquier lugar del mundo?
+              {t('title')}
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto px-2">
-              Especialistas en comercio exterior desde Chile. Trabajamos con todo tipo de commodities y buscamos la mejor oferta para tu negocio. Conectamos mercados globales con soluciones personalizadas.
+              {t('subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center pt-4 sm:pt-6 px-2">
               <Link href="/cotizar" className="w-full sm:w-auto">
                 <Button size="lg" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6">
-                  Comenzar ahora
+                  {t('cta1')}
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                 </Button>
               </Link>
               <Link href="/servicios" className="w-full sm:w-auto">
                 <Button size="lg" variant="outline" className="w-full sm:w-auto text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6">
-                  Ver servicios
+                  {t('cta2')}
                 </Button>
               </Link>
             </div>
@@ -46,9 +45,9 @@ export default function Home() {
                 <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                   <Package className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="text-xl sm:text-2xl">Commodities Globales</CardTitle>
+                <CardTitle className="text-xl sm:text-2xl">{t('commodities.title')}</CardTitle>
                 <CardDescription className="text-sm sm:text-base">
-                  Trabajamos con todo tipo de productos: agrícolas, minerales, energéticos, manufacturados y más.
+                  {t('commodities.description')}
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -58,9 +57,9 @@ export default function Home() {
                 <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                   <Globe className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="text-xl sm:text-2xl">Cobertura Mundial</CardTitle>
+                <CardTitle className="text-xl sm:text-2xl">{t('cobertura.title')}</CardTitle>
                 <CardDescription className="text-sm sm:text-base">
-                  Operamos en todos los continentes, conectando proveedores y compradores internacionales.
+                  {t('cobertura.description')}
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -70,9 +69,9 @@ export default function Home() {
                 <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                   <TrendingUp className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="text-xl sm:text-2xl">Mejor Oferta</CardTitle>
+                <CardTitle className="text-xl sm:text-2xl">{t('oferta.title')}</CardTitle>
                 <CardDescription className="text-sm sm:text-base">
-                  Negociamos las mejores condiciones comerciales para optimizar tus costos y maximizar beneficios.
+                  {t('oferta.description')}
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -81,13 +80,12 @@ export default function Home() {
           <Card className="border-2 border-primary/30 bg-gradient-to-r from-primary/10 via-white to-accent/10 mt-12 sm:mt-20 mb-8 sm:mb-12">
             <CardHeader>
               <CardTitle className="text-xl sm:text-2xl md:text-3xl text-center mb-4 px-2">
-                Servicios Especializados
+                {t('serviciosEspecializados.title')}
               </CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-base sm:text-lg md:text-xl text-foreground font-medium max-w-4xl mx-auto px-4 leading-relaxed">
-                Carga para contenedores refrigerados y secos. Transporte terrestre coordinamos toda la logística, 
-                contamos con Agente de Aduana para asesoría global a sus operaciones.
+                {t('serviciosEspecializados.description')}
               </p>
             </CardContent>
           </Card>
@@ -96,11 +94,11 @@ export default function Home() {
             <Card className="border-2">
               <CardHeader>
                 <Shield className="h-7 w-7 sm:h-8 sm:w-8 text-primary mb-4" />
-                <CardTitle className="text-xl sm:text-2xl">Experiencia y Confianza</CardTitle>
+                <CardTitle className="text-xl sm:text-2xl">{t('experiencia.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm sm:text-base text-muted-foreground">
-                  Años de experiencia en comercio exterior nos han posicionado como socios estratégicos confiables.
+                  {t('experiencia.description')}
                 </p>
               </CardContent>
             </Card>
@@ -108,11 +106,11 @@ export default function Home() {
             <Card className="border-2">
               <CardHeader>
                 <Clock className="h-7 w-7 sm:h-8 sm:w-8 text-primary mb-4" />
-                <CardTitle className="text-xl sm:text-2xl">Soporte 24/7</CardTitle>
+                <CardTitle className="text-xl sm:text-2xl">{t('soporte.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm sm:text-base text-muted-foreground">
-                  Disponible las 24 horas del día, los 7 días de la semana para resolver cualquier contingencia.
+                  {t('soporte.description')}
                 </p>
               </CardContent>
             </Card>

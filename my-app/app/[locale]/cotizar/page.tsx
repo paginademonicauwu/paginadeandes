@@ -1,7 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import Link from "next/link"
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Navbar } from "@/components/navbar"
@@ -9,6 +10,7 @@ import { Footer } from "@/components/footer"
 import { Send, Clock, Headphones, Zap, CheckCircle2 } from "lucide-react"
 
 export default function Cotizar() {
+  const t = useTranslations('cotizar');
   const [formData, setFormData] = useState({
     nombre: "",
     email: "",
@@ -39,10 +41,10 @@ export default function Cotizar() {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center space-y-4 sm:space-y-6 mb-12 sm:mb-16">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight px-2">
-              Cotice con Nosotros
+              {t('title')}
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto px-2">
-              Somos una empresa ágil. Trabajamos con usted para solucionar cualquier contingencia en la cadena operativa logística y documental. Nuestro apoyo es 24/7.
+              {t('subtitle')}
             </p>
           </div>
 
@@ -50,11 +52,11 @@ export default function Cotizar() {
             <Card className="border-2 text-center">
               <CardHeader>
                 <Zap className="h-10 w-10 text-primary mx-auto mb-4" />
-                <CardTitle>Respuesta Rápida</CardTitle>
+                <CardTitle>{t('rapida.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Respuestas en menos de 24 horas
+                  {t('rapida.description')}
                 </p>
               </CardContent>
             </Card>
@@ -62,11 +64,11 @@ export default function Cotizar() {
             <Card className="border-2 text-center">
               <CardHeader>
                 <Headphones className="h-10 w-10 text-primary mx-auto mb-4" />
-                <CardTitle>Soporte 24/7</CardTitle>
+                <CardTitle>{t('soporte.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Equipo disponible en todo momento
+                  {t('soporte.description')}
                 </p>
               </CardContent>
             </Card>
@@ -74,11 +76,11 @@ export default function Cotizar() {
             <Card className="border-2 text-center">
               <CardHeader>
                 <CheckCircle2 className="h-10 w-10 text-primary mx-auto mb-4" />
-                <CardTitle>Soluciones Ágiles</CardTitle>
+                <CardTitle>{t('agiles.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Adaptamos nuestros servicios a tus necesidades
+                  {t('agiles.description')}
                 </p>
               </CardContent>
             </Card>
@@ -87,16 +89,16 @@ export default function Cotizar() {
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">
             <Card className="border-2">
               <CardHeader>
-                <CardTitle className="text-2xl sm:text-3xl mb-2">Solicite su Cotización</CardTitle>
+                <CardTitle className="text-2xl sm:text-3xl mb-2">{t('form.title')}</CardTitle>
                 <CardDescription className="text-sm sm:text-base">
-                  Complete el formulario y nuestro equipo se pondrá en contacto con usted a la brevedad
+                  {t('form.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="space-y-2">
                     <label htmlFor="nombre" className="text-sm font-medium">
-                      Nombre completo *
+                      {t('form.nombre')}
                     </label>
                     <input
                       type="text"
@@ -111,7 +113,7 @@ export default function Cotizar() {
 
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm font-medium">
-                      Email *
+                      {t('form.email')}
                     </label>
                     <input
                       type="email"
@@ -126,7 +128,7 @@ export default function Cotizar() {
 
                   <div className="space-y-2">
                     <label htmlFor="empresa" className="text-sm font-medium">
-                      Empresa
+                      {t('form.empresa')}
                     </label>
                     <input
                       type="text"
@@ -140,7 +142,7 @@ export default function Cotizar() {
 
                   <div className="space-y-2">
                     <label htmlFor="telefono" className="text-sm font-medium">
-                      Teléfono *
+                      {t('form.telefono')}
                     </label>
                     <input
                       type="tel"
@@ -155,7 +157,7 @@ export default function Cotizar() {
 
                   <div className="space-y-2">
                     <label htmlFor="tipoServicio" className="text-sm font-medium">
-                      Tipo de Servicio *
+                      {t('form.tipoServicio')}
                     </label>
                     <select
                       id="tipoServicio"
@@ -165,19 +167,19 @@ export default function Cotizar() {
                       onChange={handleChange}
                       className="w-full px-4 py-2 border rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-primary"
                     >
-                      <option value="">Seleccione...</option>
-                      <option value="maritimo">Transporte Marítimo</option>
-                      <option value="terrestre">Transporte Terrestre</option>
-                      <option value="multimodal">Transporte Multimodal</option>
-                      <option value="exportacion">Exportación</option>
-                      <option value="importacion">Importación</option>
+                      <option value="">{t('form.seleccione')}</option>
+                      <option value="maritimo">{t('form.maritimo')}</option>
+                      <option value="terrestre">{t('form.terrestre')}</option>
+                      <option value="multimodal">{t('form.multimodal')}</option>
+                      <option value="exportacion">{t('form.exportacion')}</option>
+                      <option value="importacion">{t('form.importacion')}</option>
                     </select>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <label htmlFor="origen" className="text-sm font-medium">
-                        Origen
+                        {t('form.origen')}
                       </label>
                       <input
                         type="text"
@@ -185,14 +187,14 @@ export default function Cotizar() {
                         name="origen"
                         value={formData.origen}
                         onChange={handleChange}
-                        placeholder="Ciudad / País"
+                        placeholder={t('form.ciudadPais')}
                         className="w-full px-4 py-2 border rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-primary"
                       />
                     </div>
 
                     <div className="space-y-2">
                       <label htmlFor="destino" className="text-sm font-medium">
-                        Destino
+                        {t('form.destino')}
                       </label>
                       <input
                         type="text"
@@ -200,7 +202,7 @@ export default function Cotizar() {
                         name="destino"
                         value={formData.destino}
                         onChange={handleChange}
-                        placeholder="Ciudad / País"
+                        placeholder={t('form.ciudadPais')}
                         className="w-full px-4 py-2 border rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-primary"
                       />
                     </div>
@@ -208,7 +210,7 @@ export default function Cotizar() {
 
                   <div className="space-y-2">
                     <label htmlFor="descripcion" className="text-sm font-medium">
-                      Descripción de la carga / Requerimientos
+                      {t('form.descripcion')}
                     </label>
                     <textarea
                       id="descripcion"
@@ -221,7 +223,7 @@ export default function Cotizar() {
                   </div>
 
                   <Button type="submit" size="lg" className="w-full text-base sm:text-lg">
-                    Enviar Solicitud
+                    {t('form.enviar')}
                     <Send className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                   </Button>
                 </form>
@@ -231,42 +233,42 @@ export default function Cotizar() {
             <div className="space-y-6">
               <Card className="border-2 bg-gradient-to-br from-primary/5 to-primary/10">
                 <CardHeader>
-                  <CardTitle className="text-xl sm:text-2xl mb-4">¿Por qué elegirnos?</CardTitle>
+                  <CardTitle className="text-xl sm:text-2xl mb-4">{t('porque.title')}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="font-semibold">Empresa Ágil</p>
+                      <p className="font-semibold">{t('porque.empresa.title')}</p>
                       <p className="text-sm text-muted-foreground">
-                        Procesos optimizados para respuestas rápidas y soluciones eficientes
+                        {t('porque.empresa.description')}
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="font-semibold">Gestión de Contingencias</p>
+                      <p className="font-semibold">{t('porque.contingencias.title')}</p>
                       <p className="text-sm text-muted-foreground">
-                        Solucionamos cualquier imprevisto en la cadena logística y documental
+                        {t('porque.contingencias.description')}
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="font-semibold">Atención Personalizada</p>
+                      <p className="font-semibold">{t('porque.personalizada.title')}</p>
                       <p className="text-sm text-muted-foreground">
-                        Trabajamos directamente contigo para entender y cumplir tus objetivos
+                        {t('porque.personalizada.description')}
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
-                      <p className="font-semibold">Disponibilidad 24/7</p>
+                      <p className="font-semibold">{t('porque.disponibilidad.title')}</p>
                       <p className="text-sm text-muted-foreground">
-                        Soporte continuo para resolver dudas o emergencias en cualquier momento
+                        {t('porque.disponibilidad.description')}
                       </p>
                     </div>
                   </div>
@@ -276,15 +278,14 @@ export default function Cotizar() {
               <Card className="border-2">
                 <CardHeader>
                   <Clock className="h-7 w-7 sm:h-8 sm:w-8 text-primary mb-4" />
-                  <CardTitle className="text-xl sm:text-2xl">Tiempos de Respuesta</CardTitle>
+                  <CardTitle className="text-xl sm:text-2xl">{t('tiempos.title')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
-                    Nuestro compromiso es responder todas las consultas en menos de 24 horas hábiles. 
-                    Para casos urgentes, disponemos de canales de comunicación prioritarios.
+                    {t('tiempos.description')}
                   </p>
                   <p className="text-sm font-semibold">
-                    Horario de atención: 24/7 - Todos los días del año
+                    {t('tiempos.horario')}
                   </p>
                 </CardContent>
               </Card>

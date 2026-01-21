@@ -1,0 +1,155 @@
+{
+  "nav": {
+    "inicio": "Inicio",
+    "servicios": "Servicios",
+    "cotizar": "Cotizar"
+  },
+  "home": {
+    "title": "¿Quieres Exportar o Importar hacia o desde cualquier lugar del mundo?",
+    "subtitle": "Especialistas en comercio exterior desde Chile. Trabajamos con todo tipo de commodities y buscamos la mejor oferta para tu negocio. Conectamos mercados globales con soluciones personalizadas.",
+    "cta1": "Comenzar ahora",
+    "cta2": "Ver servicios",
+    "commodities": {
+      "title": "Commodities Globales",
+      "description": "Trabajamos con todo tipo de productos: agrícolas, minerales, energéticos, manufacturados y más."
+    },
+    "cobertura": {
+      "title": "Cobertura Mundial",
+      "description": "Operamos en todos los continentes, conectando proveedores y compradores internacionales."
+    },
+    "oferta": {
+      "title": "Mejor Oferta",
+      "description": "Negociamos las mejores condiciones comerciales para optimizar tus costos y maximizar beneficios."
+    },
+    "serviciosEspecializados": {
+      "title": "Servicios Especializados",
+      "description": "Carga para contenedores refrigerados y secos. Transporte terrestre coordinamos toda la logística, contamos con Agente de Aduana para asesoría global a sus operaciones."
+    },
+    "experiencia": {
+      "title": "Experiencia y Confianza",
+      "description": "Años de experiencia en comercio exterior nos han posicionado como socios estratégicos confiables."
+    },
+    "soporte": {
+      "title": "Soporte 24/7",
+      "description": "Disponible las 24 horas del día, los 7 días de la semana para resolver cualquier contingencia."
+    }
+  },
+  "servicios": {
+    "title": "Servicios de Transporte",
+    "subtitle": "Soluciones completas de logística para mover tus productos por cualquier vía",
+    "maritimo": {
+      "title": "Transporte Marítimo",
+      "description": "Servicios de carga marítima para todo tipo de contenedores y carga a granel",
+      "fcl": "FCL y LCL a todos los puertos principales",
+      "refrigerados": "Contenedores refrigerados y secos",
+      "granel": "Carga a granel líquida y sólida",
+      "tracking": "Tracking en tiempo real",
+      "documentacion": "Gestión de documentación aduanera"
+    },
+    "terrestre": {
+      "title": "Transporte Terrestre",
+      "description": "Red de transporte por carretera para distribución regional y nacional",
+      "completa": "Transporte de carga completa y parcial",
+      "logistica": "Coordinamos toda la logística",
+      "transfronteriza": "Cobertura transfronteriza",
+      "express": "Servicio express y programado",
+      "flota": "Flota moderna y certificada"
+    },
+    "multimodal": {
+      "title": "Transporte Multimodal",
+      "description": "Soluciones integrales combinando marítimo, terrestre y aéreo",
+      "extremo": "Logística de extremo a extremo",
+      "optimizacion": "Optimización de rutas y costos",
+      "documentos": "Gestión unificada de documentos",
+      "contacto": "Ventana única de contacto"
+    },
+    "especializados": {
+      "title": "Nuestros Servicios Especializados",
+      "description": "Carga para contenedores refrigerados y secos. Transporte terrestre coordinamos toda la logística, contamos con Agente de Aduana para asesoría global a sus operaciones."
+    },
+    "aduana": {
+      "title": "Agente de Aduana",
+      "description": "Contamos con Agente de Aduana para asesoría global a sus operaciones. Gestión completa de trámites aduaneros, documentación y cumplimiento normativo."
+    },
+    "soluciones": {
+      "title": "Soluciones Completas para tu Cadena de Suministro",
+      "description": "No importa el tamaño de tu operación o la complejidad de tu logística. Ofrecemos servicios personalizados que se adaptan a tus necesidades específicas.",
+      "cta": "Solicitar Cotización"
+    }
+  },
+  "cotizar": {
+    "title": "Cotice con Nosotros",
+    "subtitle": "Somos una empresa ágil. Trabajamos con usted para solucionar cualquier contingencia en la cadena operativa logística y documental. Nuestro apoyo es 24/7.",
+    "rapida": {
+      "title": "Respuesta Rápida",
+      "description": "Respuestas en menos de 24 horas"
+    },
+    "soporte": {
+      "title": "Soporte 24/7",
+      "description": "Equipo disponible en todo momento"
+    },
+    "agiles": {
+      "title": "Soluciones Ágiles",
+      "description": "Adaptamos nuestros servicios a tus necesidades"
+    },
+    "form": {
+      "title": "Solicite su Cotización",
+      "description": "Complete el formulario y nuestro equipo se pondrá en contacto con usted a la brevedad",
+      "nombre": "Nombre completo *",
+      "email": "Email *",
+      "empresa": "Empresa",
+      "telefono": "Teléfono *",
+      "tipoServicio": "Tipo de Servicio *",
+      "seleccione": "Seleccione...",
+      "maritimo": "Transporte Marítimo",
+      "terrestre": "Transporte Terrestre",
+      "multimodal": "Transporte Multimodal",
+      "exportacion": "Exportación",
+      "importacion": "Importación",
+      "origen": "Origen",
+      "destino": "Destino",
+      "ciudadPais": "Ciudad / País",
+      "descripcion": "Descripción de la carga / Requerimientos",
+      "enviar": "Enviar Solicitud"
+    },
+    "porque": {
+      "title": "¿Por qué elegirnos?",
+      "empresa": {
+        "title": "Empresa Ágil",
+        "description": "Procesos optimizados para respuestas rápidas y soluciones eficientes"
+      },
+      "contingencias": {
+        "title": "Gestión de Contingencias",
+        "description": "Solucionamos cualquier imprevisto en la cadena logística y documental"
+      },
+      "personalizada": {
+        "title": "Atención Personalizada",
+        "description": "Trabajamos directamente contigo para entender y cumplir tus objetivos"
+      },
+      "disponibilidad": {
+        "title": "Disponibilidad 24/7",
+        "description": "Soporte continuo para resolver dudas o emergencias en cualquier momento"
+      }
+    },
+    "tiempos": {
+      "title": "Tiempos de Respuesta",
+      "description": "Nuestro compromiso es responder todas las consultas en menos de 24 horas hábiles. Para casos urgentes, disponemos de canales de comunicación prioritarios.",
+      "horario": "Horario de atención: 24/7 - Todos los días del año"
+    }
+  },
+  "footer": {
+    "description": "Servicios de comercio exterior y negociaciones internacionales. Conectamos mercados globales con soluciones personalizadas desde Chile.",
+    "navegacion": "Navegación",
+    "servicios": "Servicios",
+    "maritimo": "Transporte Marítimo",
+    "terrestre": "Transporte Terrestre",
+    "multimodal": "Transporte Multimodal",
+    "contacto": "Contacto",
+    "direccion": "Renaca Norte 265 Of. 510, Viña del Mar, Valparaíso, Chile",
+    "disponible": "Disponible 24/7",
+    "derechos": "© 2024 Andes Continental. Todos los derechos reservados.",
+    "privacidad": "Privacidad",
+    "terminos": "Términos",
+    "cookies": "Cookies"
+  }
+}

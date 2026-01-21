@@ -1,17 +1,16 @@
-import type { Metadata } from "next"
-import Link from "next/link"
+"use client"
+
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { Ship, Truck, Package, ArrowRight, CheckCircle2, FileCheck } from "lucide-react"
 
-export const metadata: Metadata = {
-  title: "Servicios",
-  description: "Transporte marítimo, terrestre y multimodal desde Chile. Servicios completos de logística para mover tus productos por cualquier vía. FCL, LCL, carga a granel y más.",
-}
-
 export default function Servicios() {
+  const t = useTranslations('servicios');
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">
       <Navbar />
@@ -20,10 +19,10 @@ export default function Servicios() {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center space-y-4 sm:space-y-6 mb-12 sm:mb-16">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight px-2">
-              Servicios de Transporte
+              {t('title')}
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto px-2">
-              Soluciones completas de logística para mover tus productos por cualquier vía
+              {t('subtitle')}
             </p>
           </div>
 
@@ -33,31 +32,31 @@ export default function Servicios() {
                 <div className="h-14 w-14 sm:h-16 sm:w-16 rounded-full bg-blue-500/10 flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-blue-500/20 transition-colors">
                   <Ship className="h-7 w-7 sm:h-8 sm:w-8 text-blue-600" />
                 </div>
-                <CardTitle className="text-2xl sm:text-3xl mb-3">Transporte Marítimo</CardTitle>
+                <CardTitle className="text-2xl sm:text-3xl mb-3">{t('maritimo.title')}</CardTitle>
                 <CardDescription className="text-sm sm:text-base">
-                  Servicios de carga marítima para todo tipo de contenedores y carga a granel
+                  {t('maritimo.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <p className="text-sm">FCL y LCL a todos los puertos principales</p>
+                  <p className="text-sm">{t('maritimo.fcl')}</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <p className="text-sm font-semibold">Contenedores refrigerados y secos</p>
+                  <p className="text-sm font-semibold">{t('maritimo.refrigerados')}</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <p className="text-sm">Carga a granel líquida y sólida</p>
+                  <p className="text-sm">{t('maritimo.granel')}</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <p className="text-sm">Tracking en tiempo real</p>
+                  <p className="text-sm">{t('maritimo.tracking')}</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <p className="text-sm">Gestión de documentación aduanera</p>
+                  <p className="text-sm">{t('maritimo.documentacion')}</p>
                 </div>
               </CardContent>
             </Card>
@@ -67,31 +66,31 @@ export default function Servicios() {
                 <div className="h-14 w-14 sm:h-16 sm:w-16 rounded-full bg-green-500/10 flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-green-500/20 transition-colors">
                   <Truck className="h-7 w-7 sm:h-8 sm:w-8 text-green-600" />
                 </div>
-                <CardTitle className="text-2xl sm:text-3xl mb-3">Transporte Terrestre</CardTitle>
+                <CardTitle className="text-2xl sm:text-3xl mb-3">{t('terrestre.title')}</CardTitle>
                 <CardDescription className="text-sm sm:text-base">
-                  Red de transporte por carretera para distribución regional y nacional
+                  {t('terrestre.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <p className="text-sm">Transporte de carga completa y parcial</p>
+                  <p className="text-sm">{t('terrestre.completa')}</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <p className="text-sm font-semibold">Coordinamos toda la logística</p>
+                  <p className="text-sm font-semibold">{t('terrestre.logistica')}</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <p className="text-sm">Cobertura transfronteriza</p>
+                  <p className="text-sm">{t('terrestre.transfronteriza')}</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <p className="text-sm">Servicio express y programado</p>
+                  <p className="text-sm">{t('terrestre.express')}</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <p className="text-sm">Flota moderna y certificada</p>
+                  <p className="text-sm">{t('terrestre.flota')}</p>
                 </div>
               </CardContent>
             </Card>
@@ -101,27 +100,27 @@ export default function Servicios() {
                 <div className="h-14 w-14 sm:h-16 sm:w-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-primary/20 transition-colors">
                   <Package className="h-7 w-7 sm:h-8 sm:w-8 text-primary" />
                 </div>
-                <CardTitle className="text-2xl sm:text-3xl mb-3">Transporte Multimodal</CardTitle>
+                <CardTitle className="text-2xl sm:text-3xl mb-3">{t('multimodal.title')}</CardTitle>
                 <CardDescription className="text-sm sm:text-base">
-                  Soluciones integrales combinando marítimo, terrestre y aéreo
+                  {t('multimodal.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <p className="text-sm">Logística de extremo a extremo</p>
+                  <p className="text-sm">{t('multimodal.extremo')}</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <p className="text-sm">Optimización de rutas y costos</p>
+                  <p className="text-sm">{t('multimodal.optimizacion')}</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <p className="text-sm">Gestión unificada de documentos</p>
+                  <p className="text-sm">{t('multimodal.documentos')}</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <p className="text-sm">Ventana única de contacto</p>
+                  <p className="text-sm">{t('multimodal.contacto')}</p>
                 </div>
               </CardContent>
             </Card>
@@ -130,13 +129,12 @@ export default function Servicios() {
           <Card className="border-2 border-primary/30 bg-gradient-to-r from-primary/10 via-white to-accent/10 mb-8 sm:mb-12">
             <CardHeader>
               <CardTitle className="text-xl sm:text-2xl md:text-3xl text-center mb-4 px-2">
-                Nuestros Servicios Especializados
+                {t('especializados.title')}
               </CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-base sm:text-lg md:text-xl text-foreground font-medium max-w-4xl mx-auto px-4 leading-relaxed">
-                Carga para contenedores refrigerados y secos. Transporte terrestre coordinamos toda la logística, 
-                contamos con Agente de Aduana para asesoría global a sus operaciones.
+                {t('especializados.description')}
               </p>
             </CardContent>
           </Card>
@@ -147,12 +145,11 @@ export default function Servicios() {
                 <div className="h-12 w-12 rounded-lg bg-primary/20 flex items-center justify-center mb-4">
                   <FileCheck className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="text-xl sm:text-2xl">Agente de Aduana</CardTitle>
+                <CardTitle className="text-xl sm:text-2xl">{t('aduana.title')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm sm:text-base text-muted-foreground">
-                  Contamos con <strong>Agente de Aduana</strong> para asesoría global a sus operaciones. 
-                  Gestión completa de trámites aduaneros, documentación y cumplimiento normativo.
+                  {t('aduana.description')}
                 </p>
               </CardContent>
             </Card>
@@ -160,17 +157,16 @@ export default function Servicios() {
             <Card className="border-2 bg-gradient-to-r from-primary/5 to-primary/10">
               <CardHeader>
                 <CardTitle className="text-xl sm:text-2xl text-center mb-4 px-2">
-                  Soluciones Completas para tu Cadena de Suministro
+                  {t('soluciones.title')}
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-center space-y-4">
                 <p className="text-sm sm:text-base text-muted-foreground max-w-xl mx-auto px-2">
-                  No importa el tamaño de tu operación o la complejidad de tu logística. 
-                  Ofrecemos servicios personalizados que se adaptan a tus necesidades específicas.
+                  {t('soluciones.description')}
                 </p>
                 <Link href="/cotizar" className="inline-block">
                   <Button size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 w-full sm:w-auto">
-                    Solicitar Cotización
+                    {t('soluciones.cta')}
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                   </Button>
                 </Link>
