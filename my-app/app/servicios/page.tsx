@@ -1,9 +1,15 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { Ship, Truck, Package, ArrowRight, CheckCircle2 } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Servicios",
+  description: "Transporte marítimo, terrestre y multimodal desde Chile. Servicios completos de logística para mover tus productos por cualquier vía. FCL, LCL, carga a granel y más.",
+}
 
 export default function Servicios() {
   return (
