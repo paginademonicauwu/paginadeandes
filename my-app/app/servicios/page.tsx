@@ -127,6 +127,20 @@ export default function Servicios() {
             </Card>
           </div>
 
+          <Card className="border-2 border-primary/30 bg-gradient-to-r from-primary/10 via-white to-accent/10 mb-8 sm:mb-12">
+            <CardHeader>
+              <CardTitle className="text-xl sm:text-2xl md:text-3xl text-center mb-4 px-2">
+                Nuestros Servicios Especializados
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="text-center">
+              <p className="text-base sm:text-lg md:text-xl text-foreground font-medium max-w-4xl mx-auto px-4 leading-relaxed">
+                Carga para contenedores refrigerados y secos. Transporte terrestre coordinamos toda la logística, 
+                contamos con Agente de Aduana para asesoría global a sus operaciones.
+              </p>
+            </CardContent>
+          </Card>
+
           <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 mb-12 sm:mb-16">
             <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-primary/10">
               <CardHeader>

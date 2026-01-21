@@ -11,73 +11,67 @@ interface LogoProps {
 
 export function Logo({ className, showText = true, variant = "default" }: LogoProps) {
   return (
-    <Link href="/" className={cn("flex items-center gap-3 sm:gap-4 group", className)}>
+    <Link href="/" className={cn("flex items-center gap-2 sm:gap-3 md:gap-4 group", className)}>
       <div className="relative flex-shrink-0">
         <svg
-          width={variant === "compact" ? "48" : "60"}
-          height={variant === "compact" ? "48" : "60"}
-          viewBox="0 0 160 120"
+          width={variant === "compact" ? "40" : "56"}
+          height={variant === "compact" ? "40" : "56"}
+          viewBox="0 0 180 130"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="transition-transform duration-300 group-hover:scale-105"
+          className="transition-transform duration-300 group-hover:scale-105 w-auto h-auto"
         >
           <g>
             <path
-              d="M20 75 L20 30 L60 8 L85 20 L85 75 Z"
+              d="M25 85 L25 35 L75 10 L100 25 L100 85 Z"
               fill="#0039A6"
+              className="transition-colors duration-300"
             />
             <path
-              d="M40 38 L48 33 L53 36.5 L48 41 Z"
+              d="M48 45 L57 39 L63 43.5 L57 48 Z"
               fill="white"
             />
-            <circle cx="47" cy="36" r="4.5" fill="white" />
+            <circle cx="56" cy="43.5" r="5.5" fill="white" />
             <path
-              d="M85 75 L85 40 L115 22 L125 28 L125 75 Z"
+              d="M100 85 L100 45 L140 25 L155 32 L155 85 Z"
               fill="#DA020E"
+              className="transition-colors duration-300"
             />
             <path
-              d="M12 80 Q32 70 55 80 T95 80 L102 88 L8 88 Z"
+              d="M15 92 Q40 80 70 92 T125 92 L135 102 L5 102 Z"
               fill="white"
             />
             <path
-              d="M22 80 Q35 74 55 80 T88 80"
+              d="M25 92 Q45 84 70 92 T120 92"
               stroke="#DA020E"
-              strokeWidth="5.5"
+              strokeWidth="6"
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"
+              className="transition-colors duration-300"
             />
             <path
-              d="M85 80 Q95 74 110 80"
+              d="M100 92 Q115 84 135 92"
               stroke="#0039A6"
-              strokeWidth="5.5"
+              strokeWidth="6"
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"
+              className="transition-colors duration-300"
             />
           </g>
         </svg>
       </div>
       {showText && (
-        <div className="flex flex-col leading-tight">
-          <span className={cn(
-            "font-extrabold text-[#0039A6] tracking-tight",
-            variant === "compact" 
-              ? "text-[13px] sm:text-base" 
-              : "text-base sm:text-lg md:text-xl lg:text-2xl"
-          )}>
-            <span className="hidden sm:inline">ANDES</span>
-            <span className="sm:hidden">ANDES</span>
-          </span>
-          <span className={cn(
-            "font-bold text-[#0039A6] tracking-tight opacity-90",
-            variant === "compact"
-              ? "text-[10px] sm:text-xs"
-              : "text-xs sm:text-sm md:text-base"
-          )}>
-            <span className="hidden sm:inline">CONTINENTAL.CL</span>
-          </span>
-        </div>
+        <span className={cn(
+          "font-extrabold text-[#0039A6] tracking-tight whitespace-nowrap",
+          variant === "compact" 
+            ? "text-[10px] sm:text-xs" 
+            : "text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl"
+        )}>
+          <span className="hidden sm:inline">andescontinental.cl</span>
+          <span className="sm:hidden">andes</span>
+        </span>
       )}
     </Link>
   )

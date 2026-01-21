@@ -78,7 +78,21 @@ export default function Home() {
             </Card>
           </div>
 
-          <div className="mt-12 sm:mt-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          <Card className="border-2 border-primary/30 bg-gradient-to-r from-primary/10 via-white to-accent/10 mt-12 sm:mt-20 mb-8 sm:mb-12">
+            <CardHeader>
+              <CardTitle className="text-xl sm:text-2xl md:text-3xl text-center mb-4 px-2">
+                Servicios Especializados
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="text-center">
+              <p className="text-base sm:text-lg md:text-xl text-foreground font-medium max-w-4xl mx-auto px-4 leading-relaxed">
+                Carga para contenedores refrigerados y secos. Transporte terrestre coordinamos toda la logística, 
+                contamos con Agente de Aduana para asesoría global a sus operaciones.
+              </p>
+            </CardContent>
+          </Card>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6">
             <Card className="border-2">
               <CardHeader>
                 <Shield className="h-7 w-7 sm:h-8 sm:w-8 text-primary mb-4" />
@@ -99,30 +113,6 @@ export default function Home() {
               <CardContent>
                 <p className="text-sm sm:text-base text-muted-foreground">
                   Disponible las 24 horas del día, los 7 días de la semana para resolver cualquier contingencia.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 border-primary/20">
-              <CardHeader>
-                <PackageCheck className="h-7 w-7 sm:h-8 sm:w-8 text-primary mb-4" />
-                <CardTitle className="text-xl sm:text-2xl">Contenedores</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm sm:text-base text-muted-foreground">
-                  Carga para <strong>contenedores refrigerados y secos</strong>. Soluciones completas para todo tipo de mercancías.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 border-primary/20">
-              <CardHeader>
-                <FileCheck className="h-7 w-7 sm:h-8 sm:w-8 text-primary mb-4" />
-                <CardTitle className="text-xl sm:text-2xl">Agente de Aduana</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm sm:text-base text-muted-foreground">
-                  Contamos con <strong>Agente de Aduana</strong> para asesoría global a sus operaciones.
                 </p>
               </CardContent>
             </Card>

@@ -10,7 +10,7 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="py-12 sm:py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
           <div className="space-y-4">
-            <Logo />
+            <Logo variant="default" />
             <p className="text-sm sm:text-base text-muted-foreground">
               Servicios de comercio exterior y negociaciones internacionales. Conectamos mercados globales con soluciones personalizadas desde Chile.
             </p>
