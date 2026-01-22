@@ -72,7 +72,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
           alt: isSpanish ? 'Cobertura global Andes Continental' : 'Global coverage Andes Continental',
         },
         {
-          url: `${baseUrl}/logo.png`,
+          url: `${baseUrl}/logonuevo.png`,
           width: 500,
           height: 200,
           alt: 'Andes Continental Logo',

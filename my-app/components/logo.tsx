@@ -15,7 +15,7 @@ export function Logo({ className, showText = false, variant = "default" }: LogoP
     <Link href="/" className={cn("flex items-center group", className)}>
       <div className="relative flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
         <Image
-          src="/logo.png"
+          src="/logonuevo.png"
           alt="Andes Continental"
           width={variant === "compact" ? 120 : 200}
           height={variant === "compact" ? 40 : 65}

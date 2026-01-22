@@ -7,7 +7,7 @@ export function StructuredData({ locale }: { locale: string }) {
     "@type": "Organization",
     "name": "Andes Continental",
     "url": baseUrl,
-    "logo": `${baseUrl}/logo.png`,
+    "logo": `${baseUrl}/logonuevo.png`,
     "description": isSpanish
       ? "Especialistas en comercio exterior desde Chile. Transporte marítimo, terrestre y multimodal. Agente de aduana."
       : "Foreign trade specialists from Chile. Maritime, land and multimodal transport. Customs agent.",
@@ -33,7 +33,7 @@ export function StructuredData({ locale }: { locale: string }) {
     "@type": "LocalBusiness",
     "@id": `${baseUrl}#organization`,
     "name": "Andes Continental",
-    "image": `${baseUrl}/logo.png`,
+    "image": `${baseUrl}/logonuevo.png`,
     "description": isSpanish
       ? "Servicios de comercio exterior y logística internacional desde Chile"
       : "International trade and logistics services from Chile",
