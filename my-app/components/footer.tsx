@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl"
 import { Link } from "@/i18n/routing"
-import { Mail, Phone, MapPin } from "lucide-react"
+import { Mail, Phone, MapPin, MessageCircle } from "lucide-react"
 import { Logo } from "@/components/logo"
 
 export function Footer() {
@@ -60,6 +60,12 @@ export function Footer() {
               <div className="flex items-start gap-3">
                 <Phone className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                 <span className="text-sm sm:text-base text-muted-foreground">+56 9 XXXX XXXX</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <MessageCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                <a href="https://wa.me/569XXXXXXXX" target="_blank" rel="noopener noreferrer" className="text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors">
+                  {t('whatsapp')}
+                </a>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />

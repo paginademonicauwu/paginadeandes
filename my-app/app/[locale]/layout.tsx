@@ -6,6 +6,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Metadata } from 'next';
 import { StructuredData } from '@/components/structured-data';
+import { WhatsAppFloat } from '@/components/whatsapp-float';
 import "../globals.css";
 
 const geistSans = Geist({
@@ -139,6 +140,7 @@ export default async function LocaleLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <NextIntlClientProvider messages={messages}>
             {children}
+            <WhatsAppFloat />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

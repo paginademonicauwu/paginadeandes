@@ -37,6 +37,10 @@
   "servicios": {
     "title": "Transport Services",
     "subtitle": "Complete logistics solutions to move your products by any route",
+    "emprendimiento": {
+      "title": "Because Your business is also ours",
+      "description": "We offer Consultations, Services and Logistics Management in Foreign Trade, International negotiations, if you have a project we help you find the product you need and the right supplier to streamline your business"
+    },
     "maritimo": {
       "title": "Maritime Transport",
       "description": "Maritime cargo services for all types of containers and bulk cargo",
@@ -145,6 +149,7 @@
     "terrestre": "Land Transport",
     "multimodal": "Multimodal Transport",
     "contacto": "Contact",
+    "whatsapp": "WhatsApp",
     "direccion": "Renaca Norte 265 Of. 510, Viña del Mar, Valparaíso, Chile",
     "disponible": "Available 24/7",
     "derechos": "© 2024 Andes Continental. All rights reserved.",

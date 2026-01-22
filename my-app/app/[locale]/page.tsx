@@ -108,6 +108,27 @@ export default function Home() {
             </CardContent>
           </Card>
 
+          <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 mb-12">
+            <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden shadow-2xl border-2 border-primary/20 group hover:scale-[1.02] transition-transform duration-300">
+              <Image
+                src="/barcocarga.png"
+                alt="Barcos de carga y contenedores marítimos"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+            <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden shadow-2xl border-2 border-primary/20 group hover:scale-[1.02] transition-transform duration-300">
+              <Image
+                src="/avioncargooo.png"
+                alt="Andes Continental Cargo - Aviones de carga"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+          </div>
+
           <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6">
             <Card className="border-2">
               <CardHeader>

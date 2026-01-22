@@ -8,6 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { Send, Clock, Headphones, Zap, CheckCircle2 } from "lucide-react"
+import Image from 'next/image'
 
 export default function Cotizar() {
   const t = useTranslations('cotizar');
@@ -84,6 +85,16 @@ export default function Cotizar() {
                 </p>
               </CardContent>
             </Card>
+          </div>
+
+          <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden mb-12 shadow-2xl border-2 border-primary/20 group hover:scale-[1.01] transition-transform duration-300">
+            <Image
+              src="/avioncargooo.png"
+              alt="Andes Continental Cargo - Aviones de carga"
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">

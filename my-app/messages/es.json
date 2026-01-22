@@ -37,6 +37,10 @@
   "servicios": {
     "title": "Servicios de Transporte",
     "subtitle": "Soluciones completas de logística para mover tus productos por cualquier vía",
+    "emprendimiento": {
+      "title": "Porque Tu emprendimiento es también el nuestro",
+      "description": "Ofrecemos Asesorías, Servicios y Gestión logística en Comercio Exterior, Negociaciones internacionales, si tienes un proyecto ayudamos a buscar el producto que necesitas y el proveedor adecuado para agilizar tus negocios"
+    },
     "maritimo": {
       "title": "Transporte Marítimo",
       "description": "Servicios de carga marítima para todo tipo de contenedores y carga a granel",
@@ -145,6 +149,7 @@
     "terrestre": "Transporte Terrestre",
     "multimodal": "Transporte Multimodal",
     "contacto": "Contacto",
+    "whatsapp": "WhatsApp",
     "direccion": "Renaca Norte 265 Of. 510, Viña del Mar, Valparaíso, Chile",
     "disponible": "Disponible 24/7",
     "derechos": "© 2024 Andes Continental. Todos los derechos reservados.",

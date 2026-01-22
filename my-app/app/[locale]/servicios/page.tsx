@@ -7,6 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { Ship, Truck, Package, ArrowRight, CheckCircle2, FileCheck } from "lucide-react"
+import Image from 'next/image'
 
 export default function Servicios() {
   const t = useTranslations('servicios');
@@ -25,6 +26,19 @@ export default function Servicios() {
               {t('subtitle')}
             </p>
           </div>
+
+          <Card className="border-2 border-primary/30 bg-gradient-to-r from-primary/10 via-background/90 to-accent/10 mb-8 sm:mb-12 backdrop-blur-sm">
+            <CardHeader>
+              <CardTitle className="text-xl sm:text-2xl md:text-3xl text-center mb-4 px-2">
+                {t('emprendimiento.title')}
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="text-center">
+              <p className="text-base sm:text-lg md:text-xl text-foreground font-medium max-w-4xl mx-auto px-4 leading-relaxed">
+                {t('emprendimiento.description')}
+              </p>
+            </CardContent>
+          </Card>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-12 sm:mb-16">
             <Card className="border-2 hover:shadow-2xl transition-all duration-300 hover:scale-105 group">
@@ -138,6 +152,27 @@ export default function Servicios() {
               </p>
             </CardContent>
           </Card>
+
+          <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 mb-12">
+            <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden shadow-2xl border-2 border-primary/20 group hover:scale-[1.02] transition-transform duration-300">
+              <Image
+                src="/barcocarga.png"
+                alt="Barcos de carga y contenedores marítimos"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+            <div className="relative w-full h-64 sm:h-80 md:h-96 rounded-xl overflow-hidden shadow-2xl border-2 border-primary/20 group hover:scale-[1.02] transition-transform duration-300">
+              <Image
+                src="/avioncargooo.png"
+                alt="Andes Continental Cargo - Aviones de carga"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+          </div>
 
           <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 mb-12 sm:mb-16">
             <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-primary/10">
