@@ -59,11 +59,11 @@ export function Footer() {
               </div>
               <div className="flex items-start gap-3">
                 <Phone className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-sm sm:text-base text-muted-foreground">+56 9 XXXX XXXX</span>
+                <a href="tel:+56978750088" className="text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors">+56 9 7875 0088</a>
               </div>
               <div className="flex items-start gap-3">
                 <MessageCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                <a href="https://wa.me/569XXXXXXXX" target="_blank" rel="noopener noreferrer" className="text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors">
+                <a href="https://wa.me/56978750088" target="_blank" rel="noopener noreferrer" className="text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors">
                   {t('whatsapp')}
                 </a>
               </div>

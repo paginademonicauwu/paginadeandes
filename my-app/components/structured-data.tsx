@@ -20,7 +20,7 @@ export function StructuredData({ locale }: { locale: string }) {
     },
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+56-9-XXXX-XXXX",
+      "telephone": "+56-9-7875-0088",
       "contactType": "customer service",
       "availableLanguage": ["Spanish", "English"],
       "areaServed": "Worldwide"
