@@ -21,6 +21,7 @@ export function StructuredData({ locale }: { locale: string }) {
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+56-9-7875-0088",
+      "email": "ventas@andescontinental.cl",
       "contactType": "customer service",
       "availableLanguage": ["Spanish", "English"],
       "areaServed": "Worldwide"

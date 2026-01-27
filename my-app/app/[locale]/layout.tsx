@@ -112,6 +112,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       google: process.env.GOOGLE_SITE_VERIFICATION,
     },
     category: 'Business',
+    icons: {
+      icon: [
+        { url: `${baseUrl}/logonuevo.png`, type: 'image/png' },
+        { url: `${baseUrl}/logonuevo.png`, type: 'image/png', sizes: '32x32' },
+        { url: `${baseUrl}/logonuevo.png`, type: 'image/png', sizes: '16x16' },
+      ],
+      apple: [
+        { url: `${baseUrl}/logonuevo.png`, type: 'image/png' },
+      ],
+      shortcut: `${baseUrl}/logonuevo.png`,
+    },
   };
 }
 
@@ -134,10 +145,14 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
+        <link rel="icon" type="image/png" sizes="32x32" href="/logonuevo.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/logonuevo.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/logonuevo.png" />
+        <link rel="shortcut icon" href="/logonuevo.png" />
         <StructuredData locale={locale} />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <NextIntlClientProvider messages={messages}>
             {children}
             <WhatsAppFloat />

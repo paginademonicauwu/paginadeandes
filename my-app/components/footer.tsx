@@ -55,7 +55,7 @@ export function Footer() {
             <div className="flex flex-col gap-3">
               <div className="flex items-start gap-3">
                 <Mail className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                <span className="text-sm sm:text-base text-muted-foreground">contacto@andescontinental.cl</span>
+                <a href="mailto:ventas@andescontinental.cl" className="text-sm sm:text-base text-muted-foreground hover:text-primary transition-colors">ventas@andescontinental.cl</a>
               </div>
               <div className="flex items-start gap-3">
                 <Phone className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
